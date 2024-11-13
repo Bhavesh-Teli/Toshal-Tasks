@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <form action="">
+        <div class="flex flex-row gap-4">
+            <input type="text" id="txtName" placeholder="Enter Name" class="border p-1 rounded">
+            <input type="number" id="txtNumber" placeholder="Enter Number" class="border p-1 rounded">
+            <input type="email" id="txtEmail" placeholder="Enter Email" class="border p-1 rounded">
+            <input type="number" id="txtAge" placeholder="Enter Age" class="border p-1 rounded">
+        </div>
+        <div>
+            <button id="btnAdd" class="bg-blue-500 text-white p-2 m-1">Add</button>
+            <select id="adultsFilter" class="bg-gray-200 p-2">
+                <option value="all">All</option>
+                <option value="adults">Above 18</option>
+            </select>
+        </div>
+    </form>
+
+    <div class="container bg-white shadow rounded p-4">
+        <table class="w-full border-collapse">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="border p-2">Name</th>
+                    <th class="border p-2">Number</th>
+                    <th class="border p-2">Email</th>
+                    <th class="border p-2">Age</th>
+                    <th class="border p-2 ">Edit</th> 
+                    <th class="border p-2 ">Delete</th> 
+                </tr>
+            </thead>
+            <tbody id="container" class="text-center">
+               
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
